@@ -1,0 +1,32 @@
+<div class="login-box">
+  <div class="logo-wrapper">
+    <img src="../../assets/images/logo.jpeg" alt="" />
+  </div>
+  <button (click)="abcd()">open</button>
+  <button (click)="close()">close</button>
+  <div class="header form-row">
+    <label>User Login</label>
+  </div>
+  <div class="description form-row">
+    <span>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </span>
+  </div>
+  <div class="form-input form-row" [formGroup]="loginForm">
+    <input type="text" placeholder="User Name" formControlName="username" />
+    <input type="text" placeholder="Password" formControlName="password" />
+    <button
+      [ngClass]="{ 'button-disabled': !loginForm.valid }"
+      (click)="getAuthenticationToken()"
+      [disabled]="!loginForm.valid"
+    >
+      Log In
+    </button>
+    <button routerLink="register">
+      Don't have an account! Sign Up
+    </button>
+  </div>
+  <div class="footer">
+    <label></label>
+  </div>
+</div>

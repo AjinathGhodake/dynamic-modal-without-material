@@ -1,0 +1,21 @@
+{
+  "npmScope": "components",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "components": {
+      "tags": []
+    },
+    "components-e2e": {
+      "tags": []
+    },
+    "dynamic": {
+      "tags": []
+    }
+  }
+}

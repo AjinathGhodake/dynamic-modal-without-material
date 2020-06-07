@@ -1,0 +1,107 @@
+:host {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../../../assets/images/backgound.jpg) no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.form-row {
+  margin-bottom: 16px;
+}
+
+.login-box {
+  height: 100%;
+  border-radius: 8px;
+  width: 20%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  text-align: center;
+  padding: 36px;
+
+  .logo-wrapper {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    img {
+      width: 40px;
+    }
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    span {
+      display: block;
+      overflow: hidden;
+    }
+  }
+  .header {
+    label {
+      font-weight: 600;
+      font-size: 28px;
+    }
+  }
+  .form-input {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    input[type='button'] {
+      margin-bottom: 8px;
+      background-color: aqua;
+    }
+    input[type='text'] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type='button'] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .button-disabled {
+      background-color: #bccebd;
+    }
+    button {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type='submit']:hover {
+      background-color: #45a049;
+    }
+  }
+}
+@media only screen and (max-width: 1146px) {
+  .login-box {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 946px) {
+  .login-box {
+    width: 92%;
+  }
+}
